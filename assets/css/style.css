@@ -1,0 +1,22 @@
+html, body {
+    text-align: center;
+    height: 100%;
+    margin: 0;
+}
+
+button:hover {
+    box-shadow: 0 1px 8px black;  
+}
+
+section {
+    width: 100%;
+    max-width: 650px;
+    padding: 30px;
+    margin: auto;
+}
+
+#container {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
