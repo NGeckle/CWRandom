@@ -308,6 +308,7 @@ $(document).ready(function() {
 
   var streaks = ["Combat Bow", "RC-XD", "Spy Plane", "Counter Spy Plane", "Armor", "Sentry Turret", "Care Package", "Napalm Strike", "Artillery", "Cruise Missile", "Air Patrol", "War Machine", "Attack Helicopter", "H.A.R.P.", "VTOL Escort", "Chopper Gunner", "Gunship"];
 
+  var cardRandom;
   var perk1Rand;
   var perk2Rand;
   var perk3Rand;
@@ -333,7 +334,7 @@ $(document).ready(function() {
   var gun2;
 
   var random = function() {
-    var cardRandom = wildcard[Math.floor(Math.random() * wildcard.length)];
+    cardRandom = wildcard[Math.floor(Math.random() * wildcard.length)];
 
     $("#wildcard").html(cardRandom);
     streak1 = streaks[Math.floor(Math.random() * streaks.length)];
@@ -897,11 +898,21 @@ $(document).ready(function() {
 
   var loop1 = function() {
     if (chooseWeapon1 === "Primary") {
-      for (i = 0; i < 5; i++) {
-        attachP[i] = attachments[gun][primaryRand][attachmentsP[i]][Math.floor(Math.random() * attachments[gun][primaryRand][attachmentsP[i]].length)];
-        $(`#${attachmentsP[i]}1`).html(attachP[i]);
-        console.log(primaryRand);
-        console.log(attachP[i]);
+      if (cardRandom === "Gunfighter") {
+        for (i = 0; i < 8; i++) {
+          attachP[i] = attachments[gun][primaryRand][attachmentsP[i]][Math.floor(Math.random() * attachments[gun][primaryRand][attachmentsP[i]].length)];
+          $(`#${attachmentsP[i]}1`).html(attachP[i]);
+          console.log(primaryRand);
+          console.log(attachP[i]);
+        }
+      }
+      else {
+        for (i = 0; i < 5; i++) {
+          attachP[i] = attachments[gun][primaryRand][attachmentsP[i]][Math.floor(Math.random() * attachments[gun][primaryRand][attachmentsP[i]].length)];
+          $(`#${attachmentsP[i]}1`).html(attachP[i]);
+          console.log(primaryRand);
+          console.log(attachP[i]);
+        }
       }
       loop2();
     }
