@@ -559,232 +559,51 @@ $(document).ready(function() {
 
     if (primaryRand === "XM4" || primaryRand === "AK-47" || primaryRand === "Krig 6" || primaryRand === "QBZ-83" || primaryRand === "FFAR1" || primaryRand === "Groza") {
       gun = "Assault Rifles";
-      $("#Optic1").empty();
-      $("#Muzzle1").empty();
-      $("#Barrel1").empty();
-      $("#Underbarrel1").empty();
-      $("#Body1").empty();
-      $("#Magazine1").empty();
-      $("#Handle1").empty();
-      $("#Stock1").empty();
     }
     else if (primaryRand === "MP5" || primaryRand === "Milano 821" || primaryRand === "AK-74u" || primaryRand === "KSP45" || primaryRand === "Bullfrog" || primaryRand === "MAC-10") {
       gun = "Submachine Guns";
-      $("#Optic1").empty();
-      $("#Muzzle1").empty();
-      $("#Barrel1").empty();
-      $("#Underbarrel1").empty();
-      $("#Body1").empty();
-      $("#Magazine1").empty();
-      $("#Handle1").empty();
-      $("#Stock1").empty();
     }
     else if (primaryRand === "Stoner 63" || primaryRand === "RPD" || primaryRand === "M60") {
       gun = "Light Machine Guns";
-      $("#Optic1").empty();
-      $("#Muzzle1").empty();
-      $("#Barrel1").empty();
-      $("#Underbarrel1").empty();
-      $("#Body1").empty();
-      $("#Magazine1").empty();
-      $("#Handle1").empty();
-      $("#Stock1").empty();
     }
     else if (primaryRand === "Type-63" || primaryRand === "M16" || primaryRand === "AUG" || primaryRand === "DMR 14") {
       gun = "Tactical Rifles";
-      $("#Optic1").empty();
-      $("#Muzzle1").empty();
-      $("#Barrel1").empty();
-      $("#Underbarrel1").empty();
-      $("#Body1").empty();
-      $("#Magazine1").empty();
-      $("#Handle1").empty();
-      $("#Stock1").empty();
     }
     else if (primaryRand === "Pellington 703" || primaryRand === "LW3 - Tundra" || primaryRand === "M82") {
       gun = "Sniper Rifles";
-      $("#Optic1").empty();
-      $("#Muzzle1").empty();
-      $("#Barrel1").empty();
-      $("#Underbarrel1").empty();
-      $("#Body1").empty();
-      $("#Magazine1").empty();
-      $("#Handle1").empty();
-      $("#Stock1").empty();
     }
     else if (primaryRand === "1911" || primaryRand === "Magnum" || primaryRand === "Diamatti") {
       gun = "Pistols";
-      $("#Optic1").empty();
-      $("#Muzzle1").empty();
-      $("#Barrel1").empty();
-      $("#Underbarrel1").empty();
-      $("#Body1").empty();
-      $("#Magazine1").empty();
-      $("#Handle1").empty();
-      $("#Stock1").empty();
     }
     else if (primaryRand === "Hauer 77" || primaryRand === "Gallo SA12") {
       gun = "Shotguns";
-      $("#Optic1").empty();
-      $("#Muzzle1").empty();
-      $("#Barrel1").empty();
-      $("#Underbarrel1").empty();
-      $("#Body1").empty();
-      $("#Magazine1").empty();
-      $("#Handle1").empty();
-      $("#Stock1").empty();
     }
     else if (primaryRand === "RPG-7" || primaryRand === "Knife" || primaryRand === "M79" || primaryRand === "Cigma 2") {
-      $("#Optic1").empty();
-      $("#Muzzle1").empty();
-      $("#Barrel1").empty();
-      $("#Underbarrel1").empty();
-      $("#Body1").empty();
-      $("#Magazine1").empty();
-      $("#Handle1").empty();
-      $("#Stock1").empty();
     }
     if (secondaryRand === "1911" || secondaryRand === "Magnum" || secondaryRand === "Diamatti") {
       gun2 = "Pistols";
-      $("#Optic2").empty();
-      $("#Muzzle2").empty();
-      $("#Barrel2").empty();
-      $("#Underbarrel2").empty();
-      $("#Body2").empty();
-      $("#Magazine2").empty();
-      $("#Handle2").empty();
-      $("#Stock2").empty();
     }
     else if (secondaryRand === "Hauer 77" || secondaryRand === "Gallo SA12") {
       gun2 = "Shotguns";
-      $("#Optic2").empty();
-      $("#Muzzle2").empty();
-      $("#Barrel2").empty();
-      $("#Underbarrel2").empty();
-      $("#Body2").empty();
-      $("#Magazine2").empty();
-      $("#Handle2").empty();
-      $("#Stock2").empty();
     }
     else if (secondaryRand === "XM4" || secondaryRand === "AK-47" || secondaryRand === "Krig 6" || secondaryRand === "QBZ-83" || secondaryRand === "FFAR1" || secondaryRand === "Groza") {
       gun2 = "Assault Rifles";
-      $("#Optic2").empty();
-      $("#Muzzle2").empty();
-      $("#Barrel2").empty();
-      $("#Underbarrel2").empty();
-      $("#Body2").empty();
-      $("#Magazine2").empty();
-      $("#Handle2").empty();
-      $("#Stock2").empty();
     }
     else if (secondaryRand === "MP5" || secondaryRand === "Milano 821" || secondaryRand === "AK-74u" || secondaryRand === "KSP45" || secondaryRand === "Bullfrog" || secondaryRand === "MAC-10") {
       gun2 = "Submachine Guns";
-      $("#Optic2").empty();
-      $("#Muzzle2").empty();
-      $("#Barrel2").empty();
-      $("#Underbarrel2").empty();
-      $("#Body2").empty();
-      $("#Magazine2").empty();
-      $("#Handle2").empty();
-      $("#Stock2").empty();
     }
     else if (secondaryRand === "Stoner 63" || secondaryRand === "RPD" || secondaryRand === "M60") {
       gun2 = "Light Machine Guns";
-      $("#Optic2").empty();
-      $("#Muzzle2").empty();
-      $("#Barrel2").empty();
-      $("#Underbarrel2").empty();
-      $("#Body2").empty();
-      $("#Magazine2").empty();
-      $("#Handle2").empty();
-      $("#Stock2").empty();
     }
     else if (secondaryRand === "Type-63" || secondaryRand === "M16" || secondaryRand === "AUG" || secondaryRand === "DMR 14") {
       gun2 = "Tactical Rifles";
-      $("#Optic2").empty();
-      $("#Muzzle2").empty();
-      $("#Barrel2").empty();
-      $("#Underbarrel2").empty();
-      $("#Body2").empty();
-      $("#Magazine2").empty();
-      $("#Handle2").empty();
-      $("#Stock2").empty();
     }
     else if (secondaryRand === "Pellington 703" || secondaryRand === "LW3 - Tundra" || secondaryRand === "M82") {
       gun2 = "Sniper Rifles";
-      $("#Optic2").empty();
-      $("#Muzzle2").empty();
-      $("#Barrel2").empty();
-      $("#Underbarrel2").empty();
-      $("#Body2").empty();
-      $("#Magazine2").empty();
-      $("#Handle2").empty();
-      $("#Stock2").empty();
-    }
-    else if (secondaryRand === "RPG-7" || secondaryRand === "Knife" || secondaryRand === "M79" || secondaryRand === "Cigma 2") {
-      $("#Optic2").empty();
-      $("#Muzzle2").empty();
-      $("#Barrel2").empty();
-      $("#Underbarrel2").empty();
-      $("#Body2").empty();
-      $("#Magazine2").empty();
-      $("#Handle2").empty();
-      $("#Stock2").empty();
     }
 
     loop1();
-    
-
-    // console.log(chooseWeapon1);
-
-    // if (chooseWeapon1 === "Primary") {
-    //   for (i = 0; i < 5; i++) {
-    //     attachP[i] = attachments[gun][primaryRand][attachmentsP[i]][Math.floor(Math.random() * attachments[gun][primaryRand][attachmentsP[i]].length)];
-    //     $(`#${attachmentsP[i]}1`).html(attachP[i]);
-    //     console.log(primaryRand);
-    //     console.log(attachP[i]);
-    //   }
-    // }
-    // else if (chooseWeapon1 === "Secondary") {
-    //   if (primaryRand === "RPG-7" || primaryRand === "Knife" || primaryRand === "M79" || primaryRand === "Cigma 2") {
-    //     return;
-    //   }
-    //   else {
-    //     for (i = 0; i < 5; i++) {
-    //       attachP[i] = attachments[gun][primaryRand][attachmentsS[i]][Math.floor(Math.random() * attachments[gun][primaryRand][attachmentsS[i]].length)];
-    //       $(`#${attachmentsS[i]}1`).html(attachP[i]);
-    //       console.log(primaryRand);
-    //       console.log(attachP[i]);
-    //     }
-    //   }
-    // }
-
-    // console.log(chooseWeapon2);
-
-    // if (chooseWeapon2 === "Primary") {
-    //   for (i = 0; i < 5; i++) {
-    //     attachS[i] = attachments[gun2][secondaryRand][attachmentsP[i]][Math.floor(Math.random() * attachments[gun2][secondaryRand][attachmentsP[i]].length)];
-    //     $(`#${attachmentsP[i]}2`).html(attachS[i]);
-    //     console.log(secondaryRand);
-    //     console.log(attachS[i]);
-    //   }
-    // }
-    // else if (chooseWeapon2 === "Secondary") {
-    //   if (primaryRand === "RPG-7" || primaryRand === "Knife" || primaryRand === "M79" || primaryRand === "Cigma 2") {
-    //     return;
-    //   }
-    //   else {
-    //     for (i = 0; i < 5; i++) {
-    //       attachS[i] = attachments[gun2][secondaryRand][attachmentsS[i]][Math.floor(Math.random() * attachments[gun2][secondaryRand][attachmentsS[i]].length)];
-    //       $(`#${attachmentsS[i]}2`).html(attachS[i]);
-    //       console.log(secondaryRand);
-    //       console.log(attachS[i]);
-    //     }
-    //   }
-    // }
   }
-
-  
 
   var determineAttachGunfighter = function() {
     attachmentsP = ["Optic", "Muzzle", "Barrel", "Underbarrel", "Body", "Magazine", "Handle", "Stock"];
@@ -794,124 +613,42 @@ $(document).ready(function() {
     attachmentsS.pop();
     if (primaryRand === "XM4" || primaryRand === "AK-47" || primaryRand === "Krig 6" || primaryRand === "QBZ-83" || primaryRand === "FFAR1" || primaryRand === "Groza") {
       gun = "Assault Rifles";
-      $("#Optic1").empty();
-      $("#Muzzle1").empty();
-      $("#Barrel1").empty();
-      $("#Underbarrel1").empty();
-      $("#Body1").empty();
-      $("#Magazine1").empty();
-      $("#Handle1").empty();
-      $("#Stock1").empty();
     }
     else if (primaryRand === "MP5" || primaryRand === "Milano 821" || primaryRand === "AK-74u" || primaryRand === "KSP45" || primaryRand === "Bullfrog" || primaryRand === "MAC-10") {
       gun = "Submachine Guns";
-      $("#Optic1").empty();
-      $("#Muzzle1").empty();
-      $("#Barrel1").empty();
-      $("#Underbarrel1").empty();
-      $("#Body1").empty();
-      $("#Magazine1").empty();
-      $("#Handle1").empty();
-      $("#Stock1").empty();
     }
     else if (primaryRand === "Stoner 63" || primaryRand === "RPD" || primaryRand === "M60") {
       gun = "Light Machine Guns";
-      $("#Optic1").empty();
-      $("#Muzzle1").empty();
-      $("#Barrel1").empty();
-      $("#Underbarrel1").empty();
-      $("#Body1").empty();
-      $("#Magazine1").empty();
-      $("#Handle1").empty();
-      $("#Stock1").empty();
     }
     else if (primaryRand === "Type-63" || primaryRand === "M16" || primaryRand === "AUG" || primaryRand === "DMR 14") {
       gun = "Tactical Rifles";
-      $("#Optic1").empty();
-      $("#Muzzle1").empty();
-      $("#Barrel1").empty();
-      $("#Underbarrel1").empty();
-      $("#Body1").empty();
-      $("#Magazine1").empty();
-      $("#Handle1").empty();
-      $("#Stock1").empty();
     }
     else if (primaryRand === "Pellington 703" || primaryRand === "LW3 - Tundra" || primaryRand === "M82") {
       gun = "Sniper Rifles";
-      $("#Optic1").empty();
-      $("#Muzzle1").empty();
-      $("#Barrel1").empty();
-      $("#Underbarrel1").empty();
-      $("#Body1").empty();
-      $("#Magazine1").empty();
-      $("#Handle1").empty();
-      $("#Stock1").empty();
     }
-    
-    else if (secondaryRand === "1911" || secondaryRand === "Magnum" || secondaryRand === "Diamatti") {
+    if (secondaryRand === "1911" || secondaryRand === "Magnum" || secondaryRand === "Diamatti") {
       gun2 = "Pistols";
-      $("#Optic2").empty();
-      $("#Muzzle2").empty();
-      $("#Barrel2").empty();
-      $("#Underbarrel2").empty();
-      $("#Body2").empty();
-      $("#Magazine2").empty();
-      $("#Handle2").empty();
-      $("#Stock2").empty();
     }
     else if (secondaryRand === "Hauer 77" || secondaryRand === "Gallo SA12") {
       gun2 = "Shotguns";
-      $("#Optic2").empty();
-      $("#Muzzle2").empty();
-      $("#Barrel2").empty();
-      $("#Underbarrel2").empty();
-      $("#Body2").empty();
-      $("#Magazine2").empty();
-      $("#Handle2").empty();
-      $("#Stock2").empty();
-    }
-    else if (secondaryRand === "RPG-7" || secondaryRand === "Knife" || secondaryRand === "M79" || secondaryRand === "Cigma 2") {
-      $("#Optic2").empty();
-      $("#Muzzle2").empty();
-      $("#Barrel2").empty();
-      $("#Underbarrel2").empty();
-      $("#Body2").empty();
-      $("#Magazine2").empty();
-      $("#Handle2").empty();
-      $("#Stock2").empty();
     }
 
     loop1();
-
-    // for (i = 0; i < 8; i++) {
-    //   attachP[i] = attachments[gun][primaryRand][attachmentsP[i]][Math.floor(Math.random() * attachments[gun][primaryRand][attachmentsP[i]].length)];
-    //   $(`#${attachmentsP[i]}1`).html(attachP[i]);
-    //   console.log(attachP[i]);
-    // }
-    // for (i = 0; i < 5; i++) {
-    //   console.log(secondaryRand);
-    //   attachS[i] = attachments[gun2][secondaryRand][attachmentsS[i]][Math.floor(Math.random() * attachments[gun2][secondaryRand][attachmentsS[i]].length)];
-    //   $(`#${attachmentsS[i]}2`).html(attachS[i]);
-    //   console.log(attachS[i]);
-    // }
   }
 
   var loop1 = function() {
+    console.log(chooseWeapon1);
     if (chooseWeapon1 === "Primary") {
       if (cardRandom === "Gunfighter") {
         for (i = 0; i < 8; i++) {
           attachP[i] = attachments[gun][primaryRand][attachmentsP[i]][Math.floor(Math.random() * attachments[gun][primaryRand][attachmentsP[i]].length)];
           $(`#${attachmentsP[i]}1`).html(attachP[i]);
-          console.log(primaryRand);
-          console.log(attachP[i]);
         }
       }
-      else {
+      else if (cardRandom === "Danger Close" || cardRandom === "Law Breaker" || cardRandom === "Perk Greed") {
         for (i = 0; i < 5; i++) {
           attachP[i] = attachments[gun][primaryRand][attachmentsP[i]][Math.floor(Math.random() * attachments[gun][primaryRand][attachmentsP[i]].length)];
           $(`#${attachmentsP[i]}1`).html(attachP[i]);
-          console.log(primaryRand);
-          console.log(attachP[i]);
         }
       }
       loop2();
@@ -920,12 +657,11 @@ $(document).ready(function() {
       if (primaryRand === "RPG-7" || primaryRand === "Knife" || primaryRand === "M79" || primaryRand === "Cigma 2") {
         loop2();
       }
-      else {
+      else  if (secondaryRand === "Hauer 77" || secondaryRand === "Gallo SA12" || secondaryRand === "1911" || secondaryRand === "Magnum" || secondaryRand === "Diamatti") {
+        console.log(gun);
         for (i = 0; i < 5; i++) {
           attachP[i] = attachments[gun][primaryRand][attachmentsS[i]][Math.floor(Math.random() * attachments[gun][primaryRand][attachmentsS[i]].length)];
           $(`#${attachmentsS[i]}1`).html(attachP[i]);
-          console.log(primaryRand);
-          console.log(attachP[i]);
         }
         loop2();
       }
@@ -934,24 +670,22 @@ $(document).ready(function() {
   }
 
   var loop2 = function() {
+    console.log(chooseWeapon2);
     if (chooseWeapon2 === "Primary") {
       for (i = 0; i < 5; i++) {
         attachS[i] = attachments[gun2][secondaryRand][attachmentsP[i]][Math.floor(Math.random() * attachments[gun2][secondaryRand][attachmentsP[i]].length)];
         $(`#${attachmentsP[i]}2`).html(attachS[i]);
-        console.log(secondaryRand);
-        console.log(attachS[i]);
       }
     }
     else if (chooseWeapon2 === "Secondary") {
-      if (primaryRand === "RPG-7" || primaryRand === "Knife" || primaryRand === "M79" || primaryRand === "Cigma 2") {
+      if (secondaryRand === "RPG-7" || secondaryRand === "Knife" || secondaryRand === "M79" || secondaryRand === "Cigma 2") {
         return;
       }
-      else {
+      else if (secondaryRand === "Hauer 77" || secondaryRand === "Gallo SA12" || secondaryRand === "1911" || secondaryRand === "Magnum" || secondaryRand === "Diamatti") {
+        console.log(gun2);
         for (i = 0; i < 5; i++) {
           attachS[i] = attachments[gun2][secondaryRand][attachmentsS[i]][Math.floor(Math.random() * attachments[gun2][secondaryRand][attachmentsS[i]].length)];
           $(`#${attachmentsS[i]}2`).html(attachS[i]);
-          console.log(secondaryRand);
-          console.log(attachS[i]);
         }
       }
     }
@@ -968,7 +702,6 @@ $(document).ready(function() {
         secondaryRand = secondary[Math.floor(Math.random() * secondary.length)];
         newWeapon();
       }
-      console.log("new weapon");
     }
     else return;
   }
@@ -983,6 +716,22 @@ $(document).ready(function() {
   }
 
   $("#random").on("click", function() {
+    $("#Optic1").empty();
+    $("#Muzzle1").empty();
+    $("#Barrel1").empty();
+    $("#Underbarrel1").empty();
+    $("#Body1").empty();
+    $("#Magazine1").empty();
+    $("#Handle1").empty();
+    $("#Stock1").empty();
+    $("#Optic2").empty();
+    $("#Muzzle2").empty();
+    $("#Barrel2").empty();
+    $("#Underbarrel2").empty();
+    $("#Body2").empty();
+    $("#Magazine2").empty();
+    $("#Handle2").empty();
+    $("#Stock2").empty();
     random();
   });
 })
