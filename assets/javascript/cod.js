@@ -276,6 +276,15 @@ var attachments = {
       "Magazine": ["9 Rnd Tube", "STANAG 12 Rnd Tube"],
       "Handle": ["Speed Tape", "Dropshot Tape", "Field Tape", "SASR Jungle Grip", "Serpent Wrap", "Airborne Elastic Wrap"],
       "Stock": ["Tactical Stock", "Wire Stock", "Duster Stock", "No Stock", "SAS Combat Stock", "Marathon Stock"]
+    },
+    "Streetsweeper": {
+      "Optic": ["Millstop Reflex", "Quickdot LED", "Microflex LED"],
+      "Muzzle": ["Duckbill Choke", "Flash Cone 12 GA", "Sound Suppressor", "Infantry V-Choke", "SOCOM Blast Mitigator", "Agency Choke"],
+      "Barrel": ["13.7\" Extended", "14.6\" Cavalry Lancer", "13\" Reinforced Heavy", "14.6\" Ranger", "13.3\" Hammer Forged", "14.4\" Task Force"],
+      "Body": ["Steady Aim Laser", "Mounted Flashlight", "SOF Target Designator", "SWAT 5mw Laser Sight", "Tiger Team Spotlight", "Ember Sighting Point"],
+      "Magazine": ["15 Rnd Drum", "STANAG 18 Rnd Drum"],
+      "Handle": ["Speed Tape", "Dropshot Wrap", "Field Tape", "SASR Jungle Grip", "Serpent Wrap", "Airborne Elastic Wrap"],
+      "Stock": ["Tactical Stock", "Wire Stock", "Duster Stock", "No Stock", "SAS Combat Stock", "Marathon Stock"]
     }
   }
 }
@@ -283,7 +292,7 @@ var attachments = {
 $(document).ready(function() {
   var primary = ["XM4", "AK-47", "Krig 6", "QBZ-83", "FFAR1", "Groza", "MP5", "Milano 821", "AK-74u", "KSP45", "Bullfrog", "MAC-10", "Type-63", "M16", "AUG", "DMR 14", "Stoner 63", "RPD", "M60", "Pellington 703", "LW3 - Tundra", "M82"];
   
-  var secondary = ["1911", "Magnum", "Diamatti", "Hauer 77", "Gallo SA12", "Cigma 2", "RPG-7", "Knife", "M79"];
+  var secondary = ["1911", "Magnum", "Diamatti", "Hauer 77", "Gallo SA12", "Streetsweeper", "Cigma 2", "RPG-7", "Knife", "M79", "Wakizashi", "Sledgehammer"];
 
   var weapons = ["Primary", "Secondary"];
 
@@ -575,15 +584,15 @@ $(document).ready(function() {
     else if (primaryRand === "1911" || primaryRand === "Magnum" || primaryRand === "Diamatti") {
       gun = "Pistols";
     }
-    else if (primaryRand === "Hauer 77" || primaryRand === "Gallo SA12") {
+    else if (primaryRand === "Hauer 77" || primaryRand === "Gallo SA12" || primaryRand === "Streetsweeper") {
       gun = "Shotguns";
     }
-    else if (primaryRand === "RPG-7" || primaryRand === "Knife" || primaryRand === "M79" || primaryRand === "Cigma 2") {
+    else if (primaryRand === "RPG-7" || primaryRand === "Knife" || primaryRand === "Wakizashi" || primaryRand === "Sledgehammer" || primaryRand === "M79" || primaryRand === "Cigma 2") {
     }
     if (secondaryRand === "1911" || secondaryRand === "Magnum" || secondaryRand === "Diamatti") {
       gun2 = "Pistols";
     }
-    else if (secondaryRand === "Hauer 77" || secondaryRand === "Gallo SA12") {
+    else if (secondaryRand === "Hauer 77" || secondaryRand === "Gallo SA12" || secondaryRand === "Streetsweeper") {
       gun2 = "Shotguns";
     }
     else if (secondaryRand === "XM4" || secondaryRand === "AK-47" || secondaryRand === "Krig 6" || secondaryRand === "QBZ-83" || secondaryRand === "FFAR1" || secondaryRand === "Groza") {
@@ -629,7 +638,7 @@ $(document).ready(function() {
     if (secondaryRand === "1911" || secondaryRand === "Magnum" || secondaryRand === "Diamatti") {
       gun2 = "Pistols";
     }
-    else if (secondaryRand === "Hauer 77" || secondaryRand === "Gallo SA12") {
+    else if (secondaryRand === "Hauer 77" || secondaryRand === "Gallo SA12" || secondaryRand === "Streetsweeper") {
       gun2 = "Shotguns";
     }
 
@@ -654,10 +663,10 @@ $(document).ready(function() {
       loop2();
     }
     else if (chooseWeapon1 === "Secondary") {
-      if (primaryRand === "RPG-7" || primaryRand === "Knife" || primaryRand === "M79" || primaryRand === "Cigma 2") {
+      if (primaryRand === "RPG-7" || primaryRand === "Knife" || primaryRand === "Wakizashi" || primaryRand === "Sledgehammer" || primaryRand === "M79" || primaryRand === "Cigma 2") {
         loop2();
       }
-      else  if (secondaryRand === "Hauer 77" || secondaryRand === "Gallo SA12" || secondaryRand === "1911" || secondaryRand === "Magnum" || secondaryRand === "Diamatti") {
+      else  if (secondaryRand === "Hauer 77" || secondaryRand === "Gallo SA12" || secondaryRand === "Streetsweeper" || secondaryRand === "1911" || secondaryRand === "Magnum" || secondaryRand === "Diamatti") {
         console.log(gun);
         for (i = 0; i < 5; i++) {
           attachP[i] = attachments[gun][primaryRand][attachmentsS[i]][Math.floor(Math.random() * attachments[gun][primaryRand][attachmentsS[i]].length)];
@@ -678,10 +687,10 @@ $(document).ready(function() {
       }
     }
     else if (chooseWeapon2 === "Secondary") {
-      if (secondaryRand === "RPG-7" || secondaryRand === "Knife" || secondaryRand === "M79" || secondaryRand === "Cigma 2") {
+      if (secondaryRand === "RPG-7" || secondaryRand === "Knife" || secondaryRand === "Wakizashi" || secondaryRand === "Sledgehammer" || secondaryRand === "M79" || secondaryRand === "Cigma 2") {
         return;
       }
-      else if (secondaryRand === "Hauer 77" || secondaryRand === "Gallo SA12" || secondaryRand === "1911" || secondaryRand === "Magnum" || secondaryRand === "Diamatti") {
+      else if (secondaryRand === "Hauer 77" || secondaryRand === "Gallo SA12" || secondaryRand === "Streetsweeper" || secondaryRand === "1911" || secondaryRand === "Magnum" || secondaryRand === "Diamatti") {
         console.log(gun2);
         for (i = 0; i < 5; i++) {
           attachS[i] = attachments[gun2][secondaryRand][attachmentsS[i]][Math.floor(Math.random() * attachments[gun2][secondaryRand][attachmentsS[i]].length)];
