@@ -553,13 +553,13 @@ $(document).ready(function() {
 
   var determineAttach = function() {
     attachmentsP = ["Optic", "Muzzle", "Barrel", "Underbarrel", "Body", "Magazine", "Handle", "Stock"];
-    attachmentsP.sort(() => Math.random() - Math.random()).slice(0, 5);
+    attachmentsP.sort(() => Math.random() - Math.random()).slice(0, 8);
     attachmentsP.pop();
     attachmentsP.pop();
     attachmentsP.pop();
 
     attachmentsS = ["Optic", "Muzzle", "Barrel", "Body", "Magazine", "Handle", "Stock"];
-    attachmentsS.sort(() => Math.random() - Math.random()).slice(0, 5);
+    attachmentsS.sort(() => Math.random() - Math.random()).slice(0, 7);
     attachmentsS.pop();
     attachmentsS.pop();
 
@@ -617,7 +617,7 @@ $(document).ready(function() {
   var determineAttachGunfighter = function() {
     attachmentsP = ["Optic", "Muzzle", "Barrel", "Underbarrel", "Body", "Magazine", "Handle", "Stock"];
     attachmentsS = ["Optic", "Muzzle", "Barrel", "Body", "Magazine", "Handle", "Stock"];
-    attachmentsS.sort(() => Math.random() - Math.random()).slice(0, 5);
+    attachmentsS.sort(() => Math.random() - Math.random()).slice(0, 7);
     attachmentsS.pop();
     attachmentsS.pop();
     if (primaryRand === "XM4" || primaryRand === "AK-47" || primaryRand === "Krig 6" || primaryRand === "QBZ-83" || primaryRand === "FFAR1" || primaryRand === "Groza") {
@@ -679,7 +679,6 @@ $(document).ready(function() {
   }
 
   var loop2 = function() {
-    console.log(chooseWeapon2);
     if (chooseWeapon2 === "Primary") {
       for (i = 0; i < 5; i++) {
         attachS[i] = attachments[gun2][secondaryRand][attachmentsP[i]][Math.floor(Math.random() * attachments[gun2][secondaryRand][attachmentsP[i]].length)];
@@ -690,8 +689,13 @@ $(document).ready(function() {
       if (secondaryRand === "RPG-7" || secondaryRand === "Knife" || secondaryRand === "Wakizashi" || secondaryRand === "Sledgehammer" || secondaryRand === "M79" || secondaryRand === "Cigma 2") {
         return;
       }
-      else if (secondaryRand === "Hauer 77" || secondaryRand === "Gallo SA12" || secondaryRand === "Streetsweeper" || secondaryRand === "1911" || secondaryRand === "Magnum" || secondaryRand === "Diamatti") {
-        console.log(gun2);
+      else if (secondaryRand === "Hauer 77" || secondaryRand === "Gallo SA12" || secondaryRand === "Streetsweeper") {
+        for (i = 0; i < 5; i++) {
+          attachS[i] = attachments[gun2][secondaryRand][attachmentsS[i]][Math.floor(Math.random() * attachments[gun2][secondaryRand][attachmentsS[i]].length)];
+          $(`#${attachmentsS[i]}2`).html(attachS[i]);
+        }
+      }
+      else if (secondaryRand === "1911" || secondaryRand === "Magnum" || secondaryRand === "Diamatti") {
         for (i = 0; i < 5; i++) {
           attachS[i] = attachments[gun2][secondaryRand][attachmentsS[i]][Math.floor(Math.random() * attachments[gun2][secondaryRand][attachmentsS[i]].length)];
           $(`#${attachmentsS[i]}2`).html(attachS[i]);
